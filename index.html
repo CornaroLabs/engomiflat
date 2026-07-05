@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2-Bedroom Apartment for Rent in Engomi, Nicosia — 10 Min from University of Nicosia | €850/mo</title>
-<meta name="description" content="Furnished 2-bedroom maisonette to rent in Engomi, Nicosia — 80m², covered parking, A/C throughout, elevator, balconies. 10-minute walk to University of Nicosia, 900m from Mall of Engomi. €850/month, common expenses included. Available now.">
+<title>2-Bedroom Apartment for Rent in Engomi, Nicosia — 10 Min Walk from University of Nicosia | €850/mo</title>
+<meta name="description" content="Furnished 2-bedroom maisonette to rent in Engomi, Nicosia — 80m², covered parking, A/C throughout, elevator, balcony on each floor. 10-minute walk to University of Nicosia, 900m from Mall of Engomi. €850/month, common expenses included. Available now.">
 <meta name="keywords" content="apartment for rent Engomi, flat to rent Nicosia near university, University of Nicosia housing, European University Cyprus accommodation, Engomi maisonette rent">
 
 <!-- Open Graph -->
 <meta property="og:type" content="product">
-<meta property="og:title" content="2-Bedroom Apartment for Rent in Engomi — 10 Minutes from University of Nicosia">
+<meta property="og:title" content="2-Bedroom Apartment for Rent in Engomi — 10 Minutes Walk from University of Nicosia">
 <meta property="og:description" content="80m², furnished, covered parking, A/C throughout. €850/month, common expenses included. 10 minutes from University of Nicosia.">
 <meta property="og:image" content="https://cdn1.bazaraki.com/media/cache1/5f/1d/5f1d5de53128a3ba5689622d7805d974.webp">
 
@@ -19,7 +19,7 @@
   "@context": "https://schema.org",
   "@type": "Apartment",
   "name": "2-Bedroom Furnished Maisonette in Engomi",
-  "description": "Furnished 2-bedroom maisonette, 80 sqm, covered parking, full air conditioning, elevator, two large balconies. Close to University of Nicosia, European University Cyprus and Mall of Engomi.",
+  "description": "Furnished 2-bedroom maisonette, 80 sqm, covered parking, full air conditioning, elevator, balcony on each floor. Close to University of Nicosia, European University Cyprus and Mall of Engomi.",
   "numberOfRooms": 2,
   "numberOfBathroomsTotal": 1,
   "floorSize": { "@type": "QuantitativeValue", "value": 80, "unitCode": "MTK" },
@@ -29,7 +29,6 @@
     "postalCode": "2414",
     "addressCountry": "CY"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 35.1535, "longitude": 33.31715 },
   "offers": {
     "@type": "Offer",
     "price": "850",
@@ -107,8 +106,9 @@
     border:1px solid var(--line); padding:7px 12px; border-radius:2px;
     background:var(--paper-warm);
   }
-  .hero-img{ border-radius:2px; overflow:hidden; box-shadow:0 18px 40px rgba(22,35,43,.16); }
-  .hero-img img{ width:100%; height:420px; object-fit:cover; }
+  .hero-img{ border-radius:6px; overflow:hidden; box-shadow:0 18px 40px rgba(22,35,43,.16); }
+  .hero-img.stairs-diagram{ box-shadow:0 18px 40px rgba(22,35,43,.16); padding:22px; }
+  .hero-img svg{ width:100%; height:auto; display:block; }
 
   /* Departure board — signature element */
   .board{
@@ -155,7 +155,7 @@
   .map-frame{ border:1px solid var(--line); border-radius:2px; overflow:hidden; margin-top:8px; position:relative; }
   .map-frame iframe{ width:100%; height:340px; border:0; display:block; }
   .map-privacy-ring{
-    position:absolute; top:50%; left:50%; width:170px; height:170px;
+    position:absolute; top:50%; left:50%; width:190px; height:190px;
     transform:translate(-50%,-50%); border-radius:50%;
     border:2px dashed var(--ochre); background:rgba(201,138,43,0.12);
     pointer-events:none;
@@ -182,16 +182,36 @@
     border:1px solid var(--line); padding:3px 8px; border-radius:2px; margin-top:6px;
   }
 
+  .contact-form{ max-width:640px; margin-top:20px; display:flex; flex-direction:column; gap:16px; }
+  .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .form-field{ display:flex; flex-direction:column; gap:6px; }
+  .form-field label{
+    font-family:'IBM Plex Mono',monospace; font-size:.7rem; text-transform:uppercase;
+    letter-spacing:.08em; color:var(--muted);
+  }
+  .form-field input, .form-field textarea{
+    font-family:'Work Sans',sans-serif; font-size:.95rem; color:var(--ink);
+    background:var(--paper-warm); border:1px solid var(--line); border-radius:2px;
+    padding:10px 12px; resize:vertical;
+  }
+  .form-field input:focus, .form-field textarea:focus{ outline:2px solid var(--pine); outline-offset:1px; }
+  .btn-submit{
+    align-self:flex-start; background:var(--pine); color:var(--white); border:none;
+    padding:12px 26px; border-radius:2px; font-size:.9rem; font-weight:500; cursor:pointer;
+  }
+  .btn-submit:hover{ background:#345d54; }
+
   /* sticky mobile bar */
   .mobile-cta{ display:none; }
 
   @media (max-width: 780px){
     .hero-grid{ grid-template-columns:1fr; }
-    .hero-img img{ height:260px; }
+    .hero-img.stairs-diagram{ padding:14px; }
     h1{ font-size:1.6rem; }
     .cols{ grid-template-columns:1fr; gap:28px; }
     .amenities{ grid-template-columns:repeat(2,1fr); }
     .gallery{ grid-template-columns:repeat(2,1fr); }
+    .form-row{ grid-template-columns:1fr; }
     .topbar .btn-wa span.long{ display:none; }
     body{ padding-bottom:70px; }
     .mobile-cta{
@@ -221,7 +241,7 @@
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow">Engomi · Nicosia · Available now</span>
-      <h1>2-Bedroom Apartment for Rent in Engomi, Nicosia — 10 Minutes from University of Nicosia</h1>
+      <h1>2-Bedroom Apartment for Rent in Engomi, Nicosia — 10 Minutes Walk from University of Nicosia</h1>
       <p class="lead">Furnished 2-bedroom maisonette on a quiet residential street in Engomi — fully equipped, and genuinely close to everything a student or young professional needs.</p>
       <div class="facts">
         <span class="fact-chip">2 BED</span>
@@ -232,8 +252,68 @@
         <span class="fact-chip">A/C ALL ROOMS</span>
       </div>
     </div>
-    <div class="hero-img">
-      <img src="https://cdn1.bazaraki.com/media/cache1/5f/1d/5f1d5de53128a3ba5689622d7805d974.webp" alt="Living room of the 2-bedroom apartment in Engomi">
+    <div class="hero-img stairs-diagram">
+      <svg viewBox="0 0 360 322" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two-level floor layout connected by a spiral staircase">
+        <defs>
+          <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#16232B" flood-opacity="0.14"/>
+          </filter>
+        </defs>
+
+        <!-- upper floor card -->
+        <rect x="24" y="34" width="312" height="92" rx="6" fill="#FDFCF8" stroke="#16232B" stroke-width="1.2" filter="url(#cardShadow)"/>
+        <rect x="24" y="14" width="126" height="26" rx="13" fill="#3E6E64"/>
+        <text x="40" y="31.5" font-family="IBM Plex Mono, monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#FDFCF8">UPPER FLOOR</text>
+
+        <rect x="40" y="52" width="130" height="26" rx="13" fill="#ECE6D8" stroke="#16232B" stroke-opacity="0.15"/>
+        <text x="55" y="69" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Bedroom 1</text>
+        <rect x="182" y="52" width="130" height="26" rx="13" fill="#ECE6D8" stroke="#16232B" stroke-opacity="0.15"/>
+        <text x="197" y="69" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Bedroom 2</text>
+        <rect x="40" y="86" width="130" height="26" rx="13" fill="#ECE6D8" stroke="#16232B" stroke-opacity="0.15"/>
+        <text x="55" y="103" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Bathroom + WC</text>
+        <rect x="182" y="86" width="130" height="26" rx="13" fill="#C98A2B" fill-opacity="0.16" stroke="#C98A2B" stroke-opacity="0.5"/>
+        <text x="197" y="103" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">1 large balcony</text>
+
+        <!-- staircase, a flowing spiral rendered in the site's line-art style -->
+        <g>
+          <!-- central newel pole, behind the ribbon -->
+          <line x1="180" y1="128" x2="180" y2="212" stroke="#16232B" stroke-width="4" stroke-opacity="0.3" stroke-linecap="round"/>
+          <circle cx="180" cy="126" r="4" fill="#16232B" opacity="0.5"/>
+          <circle cx="180" cy="214" r="5" fill="#16232B" opacity="0.5"/>
+
+          <!-- the spiral tread ribbon -->
+          <path d="M72 212 C 72 186, 262 196, 262 170 C 262 146, 78 154, 78 130 C 78 120, 130 126, 180 128"
+                fill="none" stroke="#C98A2B" stroke-width="24" stroke-linecap="round"/>
+          <!-- handrail line riding the outer edge -->
+          <path d="M72 212 C 72 186, 262 196, 262 170 C 262 146, 78 154, 78 130 C 78 120, 130 126, 180 128"
+                fill="none" stroke="#16232B" stroke-width="2.2" stroke-opacity="0.55"/>
+          <!-- tread ticks along the curve -->
+          <g stroke="#16232B" stroke-width="2" stroke-opacity="0.4">
+            <line x1="80" y1="200" x2="66" y2="206"/>
+            <line x1="140" y1="197" x2="132" y2="185"/>
+            <line x1="220" y1="184" x2="228" y2="196"/>
+            <line x1="248" y1="156" x2="262" y2="154"/>
+            <line x1="180" y1="150" x2="182" y2="164"/>
+            <line x1="102" y1="138" x2="98" y2="150"/>
+          </g>
+        </g>
+        <path d="M172 118 l16 -2 l-8 14 z" fill="#C98A2B"/>
+        <text x="180" y="242" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="1.5" fill="#C98A2B">SPIRAL STAIRCASE</text>
+
+        <!-- ground floor card -->
+        <rect x="24" y="214" width="312" height="92" rx="6" fill="#FDFCF8" stroke="#16232B" stroke-width="1.2" filter="url(#cardShadow)"/>
+        <rect x="24" y="194" width="140" height="26" rx="13" fill="#3E6E64"/>
+        <text x="40" y="211.5" font-family="IBM Plex Mono, monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#FDFCF8">GROUND FLOOR</text>
+
+        <rect x="40" y="232" width="130" height="26" rx="13" fill="#ECE6D8" stroke="#16232B" stroke-opacity="0.15"/>
+        <text x="55" y="249" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Kitchen</text>
+        <rect x="182" y="232" width="130" height="26" rx="13" fill="#ECE6D8" stroke="#16232B" stroke-opacity="0.15"/>
+        <text x="197" y="249" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Living / dining</text>
+        <rect x="40" y="266" width="130" height="26" rx="13" fill="#ECE6D8" stroke="#16232B" stroke-opacity="0.15"/>
+        <text x="55" y="283" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Guest WC</text>
+        <rect x="182" y="266" width="130" height="26" rx="13" fill="#C98A2B" fill-opacity="0.16" stroke="#C98A2B" stroke-opacity="0.5"/>
+        <text x="197" y="283" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Balcony</text>
+      </svg>
     </div>
   </div>
 </div>
@@ -265,76 +345,10 @@
 </div>
 
 <section class="section-line">
-  <div class="wrap cols" style="align-items:center;">
-    <div class="desc">
-      <h2>The layout</h2>
-      <p>The lower level holds the kitchen and an open living-dining area that opens onto a balcony, plus a guest WC. Upstairs, both bedrooms have their own balconies, alongside the bathroom and a second WC.</p>
-      <p>The apartment is furnished and fitted with a TV, fridge and oven, so it's ready to move into — bring your suitcase and settle in the same day.</p>
-    </div>
-    <div class="stairs-diagram">
-      <svg viewBox="0 0 360 322" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two-level floor layout connected by a staircase">
-        <defs>
-          <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
-            <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#16232B" flood-opacity="0.14"/>
-          </filter>
-        </defs>
-
-        <!-- upper floor card -->
-        <rect x="24" y="34" width="312" height="92" rx="6" fill="#FDFCF8" stroke="#16232B" stroke-width="1.2" filter="url(#cardShadow)"/>
-        <rect x="24" y="14" width="126" height="26" rx="13" fill="#3E6E64"/>
-        <text x="40" y="31.5" font-family="IBM Plex Mono, monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#FDFCF8">UPPER FLOOR</text>
-
-        <rect x="40" y="52" width="130" height="26" rx="13" fill="#ECE6D8" stroke="#16232B" stroke-opacity="0.15"/>
-        <text x="55" y="69" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Bedroom 1</text>
-        <rect x="182" y="52" width="130" height="26" rx="13" fill="#ECE6D8" stroke="#16232B" stroke-opacity="0.15"/>
-        <text x="197" y="69" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Bedroom 2</text>
-        <rect x="40" y="86" width="130" height="26" rx="13" fill="#ECE6D8" stroke="#16232B" stroke-opacity="0.15"/>
-        <text x="55" y="103" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Bathroom + WC</text>
-        <rect x="182" y="86" width="130" height="26" rx="13" fill="#C98A2B" fill-opacity="0.16" stroke="#C98A2B" stroke-opacity="0.5"/>
-        <text x="197" y="103" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">2 large balconies</text>
-
-        <!-- staircase, drawn with shaded treads for a dimensional feel -->
-        <g>
-          <!-- risers (structure) -->
-          <g stroke="#16232B" stroke-width="1.1" stroke-opacity="0.55">
-            <line x1="60" y1="214" x2="60" y2="200"/>
-            <line x1="100" y1="200" x2="100" y2="186"/>
-            <line x1="140" y1="186" x2="140" y2="172"/>
-            <line x1="180" y1="172" x2="180" y2="158"/>
-            <line x1="220" y1="158" x2="220" y2="144"/>
-            <line x1="260" y1="144" x2="260" y2="130"/>
-          </g>
-          <!-- treads (ochre, dimensional) -->
-          <g stroke="#C98A2B" stroke-width="3.4" stroke-linecap="round">
-            <line x1="60" y1="200" x2="100" y2="200"/>
-            <line x1="100" y1="186" x2="140" y2="186"/>
-            <line x1="140" y1="172" x2="180" y2="172"/>
-            <line x1="180" y1="158" x2="220" y2="158"/>
-            <line x1="220" y1="144" x2="260" y2="144"/>
-            <line x1="260" y1="130" x2="300" y2="130"/>
-          </g>
-          <!-- handrail -->
-          <path d="M60 214 L60 204 L100 204 L100 190 L140 190 L140 176 L180 176 L180 162 L220 162 L220 148 L260 148 L260 126 L300 126"
-                fill="none" stroke="#16232B" stroke-width="1" stroke-opacity="0.35"/>
-        </g>
-        <path d="M290 134 l14 -6 l-2 14 z" fill="#C98A2B"/>
-        <text x="180" y="242" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="1.5" fill="#C98A2B">STAIRCASE</text>
-
-        <!-- ground floor card -->
-        <rect x="24" y="214" width="312" height="92" rx="6" fill="#FDFCF8" stroke="#16232B" stroke-width="1.2" filter="url(#cardShadow)"/>
-        <rect x="24" y="194" width="140" height="26" rx="13" fill="#3E6E64"/>
-        <text x="40" y="211.5" font-family="IBM Plex Mono, monospace" font-size="10.5" font-weight="600" letter-spacing="1.2" fill="#FDFCF8">GROUND FLOOR</text>
-
-        <rect x="40" y="232" width="130" height="26" rx="13" fill="#ECE6D8" stroke="#16232B" stroke-opacity="0.15"/>
-        <text x="55" y="249" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Kitchen</text>
-        <rect x="182" y="232" width="130" height="26" rx="13" fill="#ECE6D8" stroke="#16232B" stroke-opacity="0.15"/>
-        <text x="197" y="249" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Living / dining</text>
-        <rect x="40" y="266" width="130" height="26" rx="13" fill="#ECE6D8" stroke="#16232B" stroke-opacity="0.15"/>
-        <text x="55" y="283" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Guest WC</text>
-        <rect x="182" y="266" width="130" height="26" rx="13" fill="#C98A2B" fill-opacity="0.16" stroke="#C98A2B" stroke-opacity="0.5"/>
-        <text x="197" y="283" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#16232B">Balcony</text>
-      </svg>
-    </div>
+  <div class="wrap">
+    <h2>The layout</h2>
+    <p style="color:var(--muted); max-width:70ch;">The lower level holds the kitchen and an open living-dining area that opens onto a balcony, plus a guest WC. Upstairs, both bedrooms share one large balcony, connected by the spiral staircase pictured above, alongside the bathroom and a second WC.</p>
+    <p style="color:var(--muted); max-width:70ch;">The apartment is furnished and fitted with a TV, fridge and oven, so it's ready to move into — bring your suitcase and settle in the same day.</p>
   </div>
 </section>
 
@@ -355,7 +369,7 @@
       <div class="amenity"><span class="mark">03</span> Electric heating throughout</div>
       <div class="amenity"><span class="mark">04</span> Covered parking space</div>
       <div class="amenity"><span class="mark">05</span> Elevator in building</div>
-      <div class="amenity"><span class="mark">06</span> Two large balconies</div>
+      <div class="amenity"><span class="mark">06</span> Balcony on each floor</div>
       <div class="amenity"><span class="mark">07</span> TV, fridge & oven</div>
       <div class="amenity"><span class="mark">08</span> Common expenses included</div>
     </div>
@@ -383,7 +397,7 @@
     <h2>Location</h2>
     <p style="color:var(--muted); max-width:60ch;">Engomi, Nicosia — a quiet residential pocket minutes from Mall of Engomi and both universities. The exact address is shared with confirmed viewings.</p>
     <div class="map-frame">
-      <iframe src="https://www.google.com/maps?q=35.1535,33.31715&z=15&output=embed" loading="lazy" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps?q=Korytsas+Street,+Engomi,+Nicosia,+Cyprus&z=16&output=embed" loading="lazy" allowfullscreen></iframe>
       <div class="map-privacy-ring"></div>
       <div class="map-privacy-label">◐ approximate area</div>
     </div>
@@ -397,6 +411,34 @@
       <p>No agency, no listing fees. Just send a message and I'll answer your questions or set up a viewing.</p>
       <a class="btn-wa" href="https://wa.me/35799000000?text=Hi%2C%20I%27m%20interested%20in%20the%202-bedroom%20apartment%20in%20Engomi" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
     </div>
+  </div>
+</section>
+
+<section class="section-line">
+  <div class="wrap">
+    <h2>Contact us</h2>
+    <p style="color:var(--muted); max-width:60ch;">Prefer email? Send a message and we'll get back to you.</p>
+    <form class="contact-form" action="https://formsubmit.co/mariannacharal@gmail.com" method="POST">
+      <input type="hidden" name="_cc" value="irini.charal@gmail.com">
+      <input type="hidden" name="_subject" value="New inquiry — Engomi apartment listing">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" type="text" name="Name" required>
+        </div>
+        <div class="form-field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" type="email" name="Email" required>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="Message" rows="4" required placeholder="I'm interested in the apartment and would like to know..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Send message</button>
+    </form>
   </div>
 </section>
 
